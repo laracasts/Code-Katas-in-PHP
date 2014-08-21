@@ -5,7 +5,7 @@ use Prophecy\Argument;
 
 class PrimeFactorsSpec extends ObjectBehavior {
 
-	function it_returns_an_empty_array_for_1()
+	function it_calculates_that_1_does_not_have_prime_factors()
 	{
 		$this->generate(1)->shouldReturn([]);
 	}
