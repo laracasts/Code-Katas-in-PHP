@@ -7,17 +7,11 @@ class RomanNumeralsConverter {
 	 */
 	protected static $lookup = [
 		1000 => 'M',
-		900  => 'CM',
 		500  => 'D',
-		400  => 'CD',
 		100  => 'C',
-		90   => 'XC',
 		50   => 'L',
-		40   => 'XL',
 		10   => 'X',
-		9    => 'IX',
 		5    => 'V',
-		4    => 'IV',
 		1    => 'I'
 	];
 
@@ -31,7 +25,9 @@ class RomanNumeralsConverter {
 
 		$solution = '';
 
-		foreach (static::$lookup as $limit => $glyph)
+        $lookup = $this->addSubtractionGlyphs(static::$lookup);
+
+		foreach ($lookup as $limit => $glyph)
 		{
 			while ($number >= $limit)
 			{
@@ -42,6 +38,42 @@ class RomanNumeralsConverter {
 
 		return $solution;
 	}
+
+    /**
+     * @param $lookup
+     * @return array
+     */
+    private function addSubtractionGlyphs($lookup) {
+
+        $i=0;
+        $newGlyphs = [];
+        $lookup = array_reverse($lookup,true);
+
+        // create the new substraction glyphs
+
+        foreach ($lookup as $number=>$glyph):
+
+           if (isset($prevGlyph)):
+                $roman = $prevGlyph . $glyph;
+                if ($i%2) $substract = $number/5;
+                $num = $number - $substract;
+                $newGlyphs[$num] = $roman;
+            endif;
+
+            if ($i%2==0) $prevGlyph = $glyph;
+
+            $i++;
+
+        endforeach;
+
+        // merge the arrays and sort in descending order
+
+        $lookup = $lookup + $newGlyphs;
+        krsort($lookup);
+
+        return $lookup;
+
+    }
 
 	/**
 	 * @param $number
