@@ -25,7 +25,7 @@ class RomanNumeralsConverter {
 
 		$solution = '';
 
-        $lookup = $this->addSubtractionGlyphs(static::$lookup);
+        $lookup = $this->addSubtractionGlyphs();
 
 		foreach ($lookup as $limit => $glyph)
 		{
@@ -43,11 +43,11 @@ class RomanNumeralsConverter {
      * @param $lookup
      * @return array
      */
-    private function addSubtractionGlyphs($lookup) {
+    private function addSubtractionGlyphs() {
 
         $i=0;
         $newGlyphs = [];
-        $lookup = array_reverse($lookup,true);
+        $lookup = array_reverse(static::$lookup,true);
 
         // create the new substraction glyphs
 
