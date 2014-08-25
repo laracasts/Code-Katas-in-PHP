@@ -75,6 +75,7 @@ class BowlingGame {
 
 	/**
 	 * Did the player make a strike?
+     * 
 	 * @param $roll
 	 * @return bool
 	 */
