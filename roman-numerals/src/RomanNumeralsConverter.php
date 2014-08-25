@@ -48,7 +48,7 @@ class RomanNumeralsConverter {
 	 */
 	private function guardAgainstInvalidNumber($number)
 	{
-		if ($number == 0)
+		if ($number <= 0)
 		{
 			throw new InvalidArgumentException;
 		}
