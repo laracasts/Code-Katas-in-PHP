@@ -2,10 +2,10 @@
 
 class StringCalculator {
 
-    /**
-     * The maximum number that may be added.
-     */
-    const MAX_NUMBER_ALLOWED = 1000;
+	/**
+	 * The maximum number that may be added.
+	 */
+	const MAX_NUMBER_ALLOWED = 1000;
 
 	/**
 	 * @param $numbers
