@@ -3,6 +3,7 @@
         "gulp": "^3.8.7",
         "gulp-notify": "^1.5.0",
         "gulp-phpspec": "^0.2.5",
+	    "gulp-plumber": "^1.1.0",
         "gulp-run": "^1.6.4"
     }
 }
