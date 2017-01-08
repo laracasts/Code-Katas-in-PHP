@@ -5,6 +5,16 @@ use Prophecy\Argument;
 
 class RomanNumeralsConverterSpec extends ObjectBehavior {
 
+    function it_calculates_the_roman_numeral_for_negative_3()
+    {
+        $this->shouldThrow('\InvalidArgumentException')->duringConvert('-3');
+    }
+
+    function it_calculates_the_roman_numeral_for_0()
+    {
+        $this->shouldThrow('\InvalidArgumentException')->duringConvert('0');
+    }
+
 	function it_calculates_the_roman_numeral_for_1()
 	{
 		$this->convert(1)->shouldReturn('I');
