@@ -1,4 +1,0 @@
-suites:
-  acme_suite:
-    namespace: Acme
-    psr4_prefix: Acme
