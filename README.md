@@ -1,6 +1,6 @@
 # PHP Code Katas
 
-PHP implementations and tests of the most popular code katas
+PHP implementations and tests of the most popular code katas. The project is a fork from a Jeffrey Ways'   [repository](https://github.com/laracasts/Code-Katas-in-PHP).
 
 ## Requirements
 
@@ -71,4 +71,3 @@ Run the tests with PHPUnit:
 
 - [Kata Catalogue](http://codingdojo.org/KataCatalogue/)
 - [PHPUnit](https://phpunit.de)
-- [PHPSpec](http://www.phpspec.net)
