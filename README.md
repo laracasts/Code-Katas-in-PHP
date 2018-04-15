@@ -70,4 +70,5 @@ Run the tests with PHPUnit:
 ## Resources
 
 - [Kata Catalogue](http://codingdojo.org/KataCatalogue/)
+- [CodeKata.com](http://codekata.com)
 - [PHPUnit](https://phpunit.de)
