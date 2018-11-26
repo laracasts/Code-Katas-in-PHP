@@ -18,7 +18,8 @@ class NumbersInWords
      * @param integer $number
      * @return bool|mixed|string
      */
-    public static function convert($number) {
+    public static function convert($number)
+    {
         $hyphen      = '-';
         $conjunction = ' and ';
         $separator   = ', ';
