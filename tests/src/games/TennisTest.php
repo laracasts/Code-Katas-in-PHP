@@ -2,10 +2,11 @@
 
 namespace test\games;
 
+use PHPUnit\Framework\TestCase;
 use games\tennis\Player;
 use games\tennis\Tennis;
 
-class TennisTest extends \PHPUnit_Framework_TestCase
+class TennisTest extends TestCase
 {
     /**
      * @var Player

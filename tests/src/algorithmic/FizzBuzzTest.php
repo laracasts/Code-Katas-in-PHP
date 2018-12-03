@@ -2,9 +2,10 @@
 
 namespace tests\algorithmic;
 
+use PHPUnit\Framework\TestCase;
 use algorithmic\FizzBuzz\FizzBuzz;
 
-class FizzBuzzTest extends \PHPUnit_Framework_TestCase
+class FizzBuzzTest extends TestCase
 {
     /**
      * @return array

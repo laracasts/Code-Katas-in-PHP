@@ -2,9 +2,6 @@
 
 namespace algorithmic\FizzBuzz;
 
-/**
- * Class FizzBuzz
- */
 class FizzBuzz
 {
     /**
@@ -31,8 +28,9 @@ class FizzBuzz
     }
 
     /**
-     * @param int $number
+     * Get
      *
+     * @param int $number
      * @return mixed
      */
     public function say($number)

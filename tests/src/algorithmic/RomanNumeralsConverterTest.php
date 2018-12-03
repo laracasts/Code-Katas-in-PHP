@@ -2,9 +2,10 @@
 
 namespace tests\algorithmic;
 
+use PHPUnit\Framework\TestCase;
 use algorithmic\RomanNumeralsConverter;
 
-class RomanNumeralsConverterTest extends \PHPUnit_Framework_TestCase
+class RomanNumeralsConverterTest extends TestCase
 {
     /**
      * @var RomanNumeralsConverter

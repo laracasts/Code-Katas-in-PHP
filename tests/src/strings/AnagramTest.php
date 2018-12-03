@@ -2,9 +2,10 @@
 
 namespace tests\strings;
 
+use PHPUnit\Framework\TestCase;
 use strings\Anagram;
 
-class AnagramTest extends \PHPUnit_Framework_TestCase
+class AnagramTest extends TestCase
 {
     protected function setUp()
     {

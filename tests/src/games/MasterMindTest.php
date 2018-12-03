@@ -2,9 +2,10 @@
 
 namespace test\games;
 
+use PHPUnit\Framework\TestCase;
 use games\MasterMind;
 
-class MasterMindTest extends \PHPUnit_Framework_TestCase
+class MasterMindTest extends TestCase
 {
     /**
      * @var MasterMind

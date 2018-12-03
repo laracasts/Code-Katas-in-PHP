@@ -10,13 +10,15 @@ class StringCalculator
 	const MAX_NUMBER_ALLOWED = 1000;
 
 	/**
-	 * @param $numbers
+	 * Add a number
+	 * 
+	 * @param int $numbers
 	 * @return int
 	 */
 	public function add($numbers)
 	{
 		$numbers = $this->parseNumbers($numbers);
-		$solution = 0 ;
+		$solution = 0;
 
 		foreach ($numbers as $number)
 		{
@@ -31,6 +33,8 @@ class StringCalculator
 	}
 
 	/**
+	 * Check number
+	 * 
 	 * @param $number
 	 */
 	private function guardAgainstInvalidNumber($number)
@@ -41,7 +45,9 @@ class StringCalculator
 	}
 
 	/**
-	 * @param $numbers
+	 * Parse an array using the intval function
+	 * 
+	 * @param int $numbers
 	 * @return array
 	 */
 	private function parseNumbers($numbers)

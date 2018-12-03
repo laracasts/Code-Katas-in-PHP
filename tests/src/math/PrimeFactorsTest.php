@@ -2,9 +2,10 @@
 
 namespace test;
 
+use PHPUnit\Framework\TestCase;
 use math\PrimeFactors;
 
-class PrimeFactorsTest extends \PHPUnit_Framework_TestCase
+class PrimeFactorsTest extends TestCase
 {
     /**
      * @var PrimeFactors

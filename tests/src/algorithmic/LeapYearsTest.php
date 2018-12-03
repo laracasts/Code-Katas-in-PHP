@@ -2,15 +2,16 @@
 
 namespace tests\algorithmic;
 
+use PHPUnit\Framework\TestCase;
 use algorithmic\LeapYears;
 
 /**
- * Class LeapYearsTest
+ * Leap Years Test
  *
  * @author Andrea Fiori
  * @since  29 January 2015
  */
-class LeapYearsTest extends \PHPUnit_Framework_TestCase
+class LeapYearsTest extends TestCase
 {
     /**
      * @var LeapYears

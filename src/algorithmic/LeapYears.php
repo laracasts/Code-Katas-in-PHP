@@ -14,7 +14,6 @@ class LeapYears
 	 * Detect if it's leap year
 	 *
 	 * @param int $year
-	 *
 	 * @return bool
 	 */
 	public function isLeap($year)
@@ -30,7 +29,6 @@ class LeapYears
 	 * Detect if it's atypical common year
 	 *
 	 * @param int $year
-	 *
 	 * @return bool
 	 */
 	private function isAtypicalCommonYear($year)
@@ -41,7 +39,7 @@ class LeapYears
 	/**
 	 * Detect if it's an atypical leap year
 	 *
-	 * @param $year
+	 * @param int $year
 	 * @return bool
 	 */
 	private function isAtypicalLeapYear($year)

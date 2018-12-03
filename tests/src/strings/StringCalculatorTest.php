@@ -2,9 +2,10 @@
 
 namespace tests\strings;
 
+use PHPUnit\Framework\TestCase;
 use strings\StringCalculator;
 
-class StringCalculatorTest extends \PHPUnit_Framework_TestCase
+class StringCalculatorTest extends TestCase
 {
     /**
      * @var StringCalculator

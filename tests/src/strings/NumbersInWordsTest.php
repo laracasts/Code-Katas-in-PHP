@@ -1,11 +1,11 @@
 <?php
 
 namespace tests\strings;
+
+use PHPUnit\Framework\TestCase;
 use strings\NumbersInWords;
 
-
-
-class NumbersInWordsTest extends \PHPUnit_Framework_TestCase
+class NumbersInWordsTest extends TestCase
 {
     protected function setUp()
     {

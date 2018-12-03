@@ -5,6 +5,8 @@ namespace strings;
 class Anagram
 {
     /**
+     * Check if $a is an anagram of $b and viceversa
+     *
      * @param string $a
      * @param string $b
      * @return boolean
