@@ -12,14 +12,14 @@ class BowlingGameTest extends TestCase
      */
     private $bowlingGame;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
         $this->bowlingGame = new BowlingGame();
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         parent::tearDown();
 
@@ -70,11 +70,10 @@ class BowlingGameTest extends TestCase
         $this->assertEquals($this->bowlingGame->score(), 300);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     */
     public function testItTakesExceptionWithInvalidRolls()
     {
+        $this->expectException( \InvalidArgumentException::class );
+
         $this->bowlingGame->roll(-10);
     }
 

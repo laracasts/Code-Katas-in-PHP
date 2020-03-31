@@ -18,8 +18,10 @@ class LeapYearsTest extends TestCase
      */
 	private $leapYears;
 
-	public function setUp()
+    protected function setUp(): void
 	{
+        parent::setUp();
+
 		$this->leapYears = new LeapYears();
 	}
 
@@ -43,11 +45,10 @@ class LeapYearsTest extends TestCase
 		$this->assertTrue( $this->leapYears->isLeap(2000) );
 	}
 
-	/**
-	 * @expectedException \InvalidArgumentException
-	 */
 	public function testInvalidYear()
 	{
-		$this->leapYears->isLeap('A string');
+        $this->expectException( \InvalidArgumentException::class );
+
+        $this->leapYears->isLeap('A string');
 	}
 }

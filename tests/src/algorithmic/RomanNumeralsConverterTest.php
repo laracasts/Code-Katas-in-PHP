@@ -12,7 +12,7 @@ class RomanNumeralsConverterTest extends TestCase
      */
     private $romanNumeralsConverter;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -94,11 +94,10 @@ class RomanNumeralsConverterTest extends TestCase
         $this->assertEquals($this->romanNumeralsConverter->convert(4990), 'MMMMCMXC');
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     */
     public function testItTakesExceptionWithZero()
     {
+        $this->expectException( \InvalidArgumentException::class );
+
         $this->romanNumeralsConverter->convert(0);
     }
 }

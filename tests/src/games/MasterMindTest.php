@@ -12,7 +12,7 @@ class MasterMindTest extends TestCase
      */
     private $game;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 

@@ -12,7 +12,7 @@ class StringCalculatorTest extends TestCase
      */
     private $stringCalculator;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -39,11 +39,10 @@ class StringCalculatorTest extends TestCase
         $this->assertEquals($this->stringCalculator->add('1,2,3,4,5'), 15);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     */
     public function test_it_disallows_negative_numbers()
     {
+        $this->expectException( \InvalidArgumentException::class );
+
         $this->stringCalculator->add('3,-2');
     }
 
