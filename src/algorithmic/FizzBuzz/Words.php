@@ -7,37 +7,45 @@ namespace algorithmic\FizzBuzz;
  */
 class Words implements Monoid
 {
+    /**
+     * @var array
+     */
     private $words = array();
 
     /**
-     * @param $singleWord
+     * @param string|array $singleWord
      */
     public function __construct($singleWord)
     {
         $this->words = $singleWord;
     }
 
-    public static function identity()
-    {
-        return new self(array());
-    }
-
+    /**
+     * Create new Words singleton
+     *
+     * @param $word
+     * @return Words
+     */
     public static function single($word)
     {
-        return new self(array($word));
+        return new self( [$word] );
     }
 
     /**
-     * @param $words
+     * Append new Words singleton
+     *
+     * @param Words $words
      *
      * @return Words
      */
-    public function append(/*Words*/ $words)
+    public function append($words)
     {
         return new self(array_merge($this->words, $words->words));
     }
 
     /**
+     * Convert to string
+     *
      * @return string
      */
     public function __toString()

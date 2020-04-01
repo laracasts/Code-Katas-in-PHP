@@ -3,7 +3,7 @@
 namespace test\math;
 
 use PHPUnit\Framework\TestCase;
-use algorithmic\LeapYears;
+use math\LeapYears;
 
 final class LeapYearsTest extends TestCase
 {

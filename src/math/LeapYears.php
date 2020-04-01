@@ -1,5 +1,7 @@
 <?php
 
+namespace math;
+
 /**
  * Detect a leap year
  *
@@ -17,7 +19,7 @@ class LeapYears
     public static function isLeap($year)
     {
         if (!is_int($year)) {
-            throw new InvalidArgumentException($year.' is not an integer number');
+            throw new \InvalidArgumentException($year.' is not an integer number');
         }
 
         return self::isAtypicalLeapYear($year) and !self::isAtypicalCommonYear($year);

@@ -1,6 +1,6 @@
 # PHP Code Katas
 
-PHP implementations and tests of the most popular code katas. The project is a fork from a Jeffrey Ways'   [repository](https://github.com/laracasts/Code-Katas-in-PHP).
+PHP implementations and tests of the most popular code katas. The project is a fork from a Jeffrey Ways' [repository](https://github.com/laracasts/Code-Katas-in-PHP).
 
 ## Requirements
 
@@ -10,62 +10,25 @@ PHP >= 5.6 and Composer are required.
 
     composer install
 
+## Verify PHPUnit is installed correctly
+
+On Windows:
+	vendor\bin\phpunit --version
+
+On Linux:
+	./vendor/bin/phpunit --version
+
 ## Testing
 
 Run the tests with PHPUnit:
 
-    vendor\bin\phpunit tests
+    vendor\bin\phpunit -c tests
 
-## Algorithmic
+## Generate Code Coverage
 
-- Bank OCR
-- FizzBuzz
-- FooBar Qix
-- Potter
-- Roman Numerals
-- Roman Calculator
-- Numbers In Words
-- Args
-- Anagram
-- Depth First Search
-- Number To LCD
+Be sure to have the X-Debug PHP extension: 
 
-## Game Modeling
-
-- Bowling
-- Game Of Life
-- Mastermid
-- Mine Sweeper
-- PacMan
-- Poker Hands
-- Reversi
-- Tennis
-- Texas Hold Em
-- Trading Card Game
-- Yahtzee
-
-##Math Oriented
-
-- Kata Range
-
-## String manipulation
-
-- Dictionary Replacer
-- Word Wrap
-
-## Specific Technologies
-
-- Qotd Cgi
-- JEE Web Authentication
-
-## Refactoring legacy code & Design Principles
-
-- TDD Micro Exercises
-
-## Design Principles
-
-- Tensions and Synergies Between Design Principles
-- Objects Relationships Coding Dojo
+    vendor\bin\phpunit -c tests --coverage-html=coverage
 
 ## Resources
 
