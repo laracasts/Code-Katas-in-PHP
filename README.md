@@ -13,9 +13,11 @@ PHP >= 5.6 and Composer are required.
 ## Verify PHPUnit is installed correctly
 
 On Windows:
+
 	vendor\bin\phpunit --version
 
 On Linux:
+
 	./vendor/bin/phpunit --version
 
 ## Testing
@@ -29,6 +31,14 @@ Run the tests with PHPUnit:
 Be sure to have the X-Debug PHP extension: 
 
     vendor\bin\phpunit -c tests --coverage-html=coverage
+
+## TODO
+
+File tree structure and folders must have:
+
+- data structures
+- algorithms
+- design patterns
 
 ## Resources
 
