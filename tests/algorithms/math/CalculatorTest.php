@@ -21,9 +21,12 @@ final class CalculatorTest extends TestCase
 
     public function testItCanAddTwoNumbers()
     {
-        $expectedSum = 6;
+        $this->assertEquals(6, self::$calc->add());
+    }
 
-        $this->assertEquals($expectedSum, self::$calc->add());
+    public function testItCanSubtractTwoNumbers()
+    {
+        $this->assertEquals(2, self::$calc->subtract());
     }
 
     public function testIfCanTellIfTwoNumbersAreDivisible()
@@ -37,12 +40,5 @@ final class CalculatorTest extends TestCase
         self::$calc->op2 = 2;
 
         $this->assertFalse( self::$calc->isDivisible() );
-    }
-
-    public function testItCanTellTheSum()
-    {
-        $actualResult = self::$calc->tellMeTheSum();
-
-        $this->assertRegExp('/^.*(5.*2)|(2.*5).*7/', $actualResult);
     }
 }

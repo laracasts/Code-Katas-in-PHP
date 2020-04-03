@@ -32,14 +32,6 @@ Be sure to have the X-Debug PHP extension:
 
     vendor\bin\phpunit -c tests --coverage-html=coverage
 
-## TODO
-
-File tree structure and folders must have:
-
-- data structures
-- algorithms
-- design patterns
-
 ## Resources
 
 - [Kata Catalogue](http://codingdojo.org/KataCatalogue/)
